@@ -7,7 +7,7 @@ question.forEach((que, index) => {
     const num = e.target;
 
     if (que.classList.contains("active")) {
-      que.style.transition = ".4s ease";
+      que.style.transition = "0.4s ease-in-out";
       que.classList.remove("active");
       arrow.forEach((arr) => (arr.style.transform = "rotate(0deg)"));
       answer.forEach((a) => a.classList.remove("active"));
